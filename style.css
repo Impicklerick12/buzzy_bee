@@ -1,7 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 #gameBoard {
     background-color: black;
     width: 500px;
-    height: 700px; 
+    height: 700px;
+    margin: auto; 
     overflow: hidden;
 }
 
@@ -21,10 +27,20 @@
 
 #hole {
     width: 70px;
-    height: 100px;
+    height: 150px;
     background-color: black;
     position: relative;
     left: 500px;
-    top: -350px;
+    top: -700px;
     animation: pipe 2s infinite linear;
+}
+
+#bee {
+    height: 40px;
+    width: 50px;
+    background-color: blue;
+    position: absolute;
+    /* margin: auto; */
+    left: 43%;
+    top: 330px;
 }

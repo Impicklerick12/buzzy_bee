@@ -1,0 +1,30 @@
+#gameBoard {
+    background-color: black;
+    width: 500px;
+    height: 700px; 
+    overflow: hidden;
+}
+
+#pipe {
+    background-color: red;
+    width: 70px;
+    height: 700px;
+    position: relative;
+    left: 500px;
+    animation: pipe 2s infinite linear
+}
+
+@keyframes pipe {
+    0%{left: 500px}
+    100%{left: -70px}
+}
+
+#hole {
+    width: 70px;
+    height: 100px;
+    background-color: black;
+    position: relative;
+    left: 500px;
+    top: -350px;
+    animation: pipe 2s infinite linear;
+}

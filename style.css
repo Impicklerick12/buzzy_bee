@@ -7,11 +7,12 @@
     background-color: black;
     width: 500px;
     height: 700px;
-    margin: auto; 
+    margin: auto;
     overflow: hidden;
 }
 
 #pipe {
+    /* background-image: url(flower.png); */
     background-color: red;
     width: 70px;
     height: 700px;
@@ -44,11 +45,17 @@
 }
 
 #bee {
-    height: 40px;
-    width: 50px;
-    background-color: blue;
+    /* I HAVE CHANGED THE BEE HEIGHT/WIDTH. WILL AFFECT THE COLISION NUMBERS
+    WAS 40x50 */
+    
+    /* background-image: url("bee.png"); */
+    background-image: url("flappy-bird.png");
+    /* background-color: yellow; */
+    height: 45px;
+    width: 60px;
     position: absolute;
     /* margin: auto; */
     left: 43%;
     top: 330px;
+    z-index: +1;
 }

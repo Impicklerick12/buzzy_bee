@@ -17,7 +17,10 @@
     height: 700px;
     position: relative;
     left: 500px;
-    animation: pipe 10s infinite linear;
+    animation: pipe 2s infinite linear;
+
+    /* Bug fixing speed */
+    /* animation: pipe 10s infinite linear; */
 }
 
 @keyframes pipe {
@@ -31,8 +34,13 @@
     background-color: black;
     position: relative;
     left: 500px;
-    top: -700px;
-    animation: pipe 10s infinite linear;
+    /* Starting position of the first hole */
+    top: -350px;
+    
+    animation: pipe 2s infinite linear;
+
+    /* Bug fixing speed */
+    /* animation: pipe 10s infinite linear; */
 }
 
 #bee {

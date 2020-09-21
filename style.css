@@ -17,7 +17,7 @@
     height: 700px;
     position: relative;
     left: 500px;
-    animation: pipe 2s infinite linear
+    animation: pipe 10s infinite linear;
 }
 
 @keyframes pipe {
@@ -32,7 +32,7 @@
     position: relative;
     left: 500px;
     top: -700px;
-    animation: pipe 2s infinite linear;
+    animation: pipe 10s infinite linear;
 }
 
 #bee {

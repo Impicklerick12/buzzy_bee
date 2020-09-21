@@ -12,8 +12,8 @@
 }
 
 #pipe {
-    /* background-image: url(flower.png); */
-    background-color: red;
+    background-image: url(flappybird-pipe.png);
+    /* background-color: red; */
     width: 70px;
     height: 700px;
     position: relative;

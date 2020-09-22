@@ -16,6 +16,7 @@ function animate() {
     handleObstacles();
     bee.update();
     bee.draw();
+    handleParticles();
     ctx.fillStyle = "red";
     ctx.font = "90px Georgia";
     ctx.strokeText(score, 450, 70);

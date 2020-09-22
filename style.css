@@ -4,15 +4,17 @@
 }
 
 #gameBoard {
-    background-color: black;
+    background-color: white;
     width: 500px;
     height: 700px;
     margin: auto; 
-    overflow: hidden;
+    border: 2px solid black;
+    /* overflow: hidden; */
 }
 
 #pipe {
-    background-color: red;
+    background-image: url(flappybird-pipe.png);
+    /* background-color: red; */
     width: 70px;
     height: 700px;
     position: relative;
@@ -31,11 +33,13 @@
 #hole {
     width: 70px;
     height: 150px;
-    background-color: black;
+    background-color: white;
     position: relative;
     left: 500px;
     /* Starting position of the first hole */
     top: -350px;
+    border-top: 5px ridge green;
+    border-bottom: 5px ridge green;
     
     animation: pipe 2s infinite linear;
 
@@ -44,9 +48,10 @@
 }
 
 #bee {
-    height: 40px;
-    width: 50px;
-    background-color: blue;
+    background-image: url(bee.png);
+    height: 47px;
+    width: 60px;
+    /* background-color: blue; */
     position: absolute;
     /* margin: auto; */
     left: 43%;

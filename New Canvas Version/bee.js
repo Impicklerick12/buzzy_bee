@@ -27,8 +27,8 @@ class Bee {
         // ctx.fillStyle = 'red';
         // ctx.fillRect(this.x, this.y, this.width, this.height);
         const bee = new Image();
-        bee.src = "../bee.png";
-        ctx.drawImage(bee, this.x, this.y, 40, 40)
+        bee.src = '../bee.png';
+        ctx.drawImage(bee, this.x, this.y, 40, 40);
     }
     flap() {
         this.vy -= 2;

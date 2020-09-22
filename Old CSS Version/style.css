@@ -35,7 +35,7 @@
     width: 60px;
     height: 150px;
     background-image: url(background_hills.jpg);
-    background: transparent;
+    background: green;
     position: relative;
     left: 500px;
     /* Starting position of the first hole */

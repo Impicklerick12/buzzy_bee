@@ -51,7 +51,7 @@ function jumping() {
         if((beeTop > 50) && (jumpCount < 15)) {
             bee.style.top = (beeTop - 5) + "px";
         }
-        
+
         // JumpCount keeps track of mouse clicks to prevent player going above screen
         if(jumpCount > 20) { 
             clearInterval(jumpInterval);

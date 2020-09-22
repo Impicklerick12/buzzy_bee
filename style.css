@@ -16,7 +16,7 @@
 #pipe {
     background-image: url(flappybird-pipe.png);
     /* background-color: red; */
-    width: 70px;
+    width: 60px;
     height: 700px;
     position: relative;
     left: 500px;
@@ -32,10 +32,10 @@
 }
 
 #hole {
-    width: 70px;
+    width: 60px;
     height: 150px;
     background-image: url(background_hills.jpg);
-    /* background-color: transparent; */
+    background: transparent;
     position: relative;
     left: 500px;
     /* Starting position of the first hole */

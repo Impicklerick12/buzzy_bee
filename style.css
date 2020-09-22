@@ -4,12 +4,13 @@
 }
 
 #gameBoard {
+    background-image: url(background_hills.jpg);
     background-color: white;
     width: 500px;
     height: 700px;
     margin: auto; 
     border: 2px solid black;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 #pipe {
@@ -33,7 +34,8 @@
 #hole {
     width: 70px;
     height: 150px;
-    background-color: white;
+    background-image: url(background_hills.jpg);
+    /* background-color: transparent; */
     position: relative;
     left: 500px;
     /* Starting position of the first hole */
@@ -49,8 +51,8 @@
 
 #bee {
     background-image: url(bee.png);
-    height: 47px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
     /* background-color: blue; */
     position: absolute;
     /* margin: auto; */

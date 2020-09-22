@@ -3,8 +3,8 @@ class Bee {
         this.x = 150;
         this.y = 200;
         this.vy = 0;
-        this.width = 20;
-        this.height = 20;
+        this.width = 40;
+        this.height = 40;
         this.weight = 1;
     }
     update() {
@@ -24,8 +24,11 @@ class Bee {
         if (spacePressed && this.y > this.weight * 3) this.flap();
     }
     draw() {
-        ctx.fillStyle = 'red';
-        ctx.fillRect(this.x, this.y, this.width, this.height);
+        // ctx.fillStyle = 'red';
+        // ctx.fillRect(this.x, this.y, this.width, this.height);
+        const bee = new Image();
+        bee.src = '../bee.png';
+        ctx.drawImage(bee, this.x, this.y, 40, 40);
     }
     flap() {
         this.vy -= 2;

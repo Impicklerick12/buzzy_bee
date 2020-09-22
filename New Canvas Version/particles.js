@@ -2,9 +2,9 @@ const particlesArray = [];
 
 class Particle {
     constructor() {
-        this.x = bee.x;
-        this.y = bee.y;
-        this.size = Math.random() * 2 + 3;
+        this.x = bee.x + 20;
+        this.y = bee.y + 40;
+        this.size = Math.random() * 1.2;
         this.speedY = (Math.random() * 2) - 0.5;
     }
     update() {

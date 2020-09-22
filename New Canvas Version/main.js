@@ -8,23 +8,26 @@ let angle = 0;
 let hue = 0;
 let frame = 0;
 let score = 0;
-let gameSpeed = 2;
+let gameSpeed = 5;
 
 const background = new Image();
 background.src = '../background_hills.jpg';
 
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    // ctx.fillRect(10, canvas.height - 90, 50, 50);
-    ctx.drawImage(background, 0, 0, canvas.width, canvas.height);                
+    ctx.drawImage(background, 0, 0, canvas.width, canvas.height);  
+
     handleObstacles();
+
     bee.update();
     bee.draw();
     handleParticles();
-    ctx.fillStyle = "red";
-    ctx.font = "90px Georgia";
-    ctx.strokeText(score, 450, 70);
-    ctx.fillText(score, 450, 70);
+
+    // ctx.fillStyle = "red";
+    // ctx.font = "90px Georgia";
+    // ctx.strokeText(score, 450, 70);
+    // ctx.fillText(score, 450, 70);
+
     handleCollisions();
     if (handleCollisions()) return;
 
@@ -51,9 +54,12 @@ function handleCollisions() {
             (bee.y > canvas.height - obstaclesArray[i].bottom && 
             bee.y + bee.height < canvas.height))) {
                 // collision detected
-                ctx.font = "25px Georgia";
-                ctx.fillStyle = "black";
-                ctx.fillText("Game over, your score is: " + score, 160, canvas.height/2 - 10);
+                ctx.font = "50px Arial";
+                ctx.fillStyle = "gold";
+                ctx.fillText("Game Over!", 170, canvas.height/2);
+                ctx.font = "25px Arial";
+                ctx.fillStyle = "red";
+                ctx.fillText("Your score is: " + score, 220, canvas.height/1.5);
                 return true
             }
     }

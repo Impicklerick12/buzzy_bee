@@ -10,10 +10,15 @@ class Obstacle {
     }
     draw() {
         ctx.fillStyle = this.color;
-        ctx.fillRect(this.x, 0, this.width, this.top);
-        ctx.fillRect(this.x, canvas.height - this.bottom, this.width, this.bottom);
+        // ctx.fillRect(this.x, 0, this.width, this.top);
+        // ctx.fillRect(this.x, canvas.height - this.bottom, this.width, this.bottom);
+        const vine = new Image();
+        vine.src = '../vine.png';
+        ctx.drawImage(vine, this.x, 0, this.width, this.top);
+        ctx.drawImage(vine, this.x, canvas.height - this.bottom, this.width, this.bottom);
+       
     }
-    update() {
+    update() {  
         this.x -= gameSpeed;
         if (!this.counted && this.x < bee.x) {
             score++;

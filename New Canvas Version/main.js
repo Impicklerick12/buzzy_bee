@@ -10,9 +10,13 @@ let frame = 0;
 let score = 0;
 let gameSpeed = 2;
 
+const background = new Image();
+background.src = '../background_hills.jpg';
+
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     // ctx.fillRect(10, canvas.height - 90, 50, 50);
+    ctx.drawImage(background, 0, 0, canvas.width, canvas.height);                
     handleObstacles();
     bee.update();
     bee.draw();

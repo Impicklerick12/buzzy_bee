@@ -11,16 +11,52 @@ let score = 0;
 let gameSpeed = 5;
 
 const background = new Image();
-background.src = '../background_hills.jpg';
+background.src ='../background_hills.jpg';
+const BG = {
+    x1: 0,
+    x2: canvas.width,
+    y: 0,
+    width: canvas.width,
+    height: canvas.height
+}
+function scrollBackground() {
+    if(BG.x1 <= -BG.width) BG.x1 = BG.width;
+    else BG.x1 -= gameSpeed + -1.7;
+    if(BG.x2 <= -BG.width) BG.x2 =BG.width;
+    else BG.x2 -= gameSpeed + -1.7;
+    ctx.drawImage(background, BG.x1, BG.y, BG.width, BG.height)
+    ctx.drawImage(background, BG.x2, BG.y, BG.width, BG.height)
+}
+
+const fence = new Image();
+fence.src ='../fence.png';
+const FG = {
+    x1: 0,
+    x2: canvas.width,
+    y: 300,
+    width: canvas.width,
+    height: 140
+}
+function scrollFence() {
+    if(FG.x1 <= -FG.width) FG.x1 = FG.width;
+    else FG.x1 -= gameSpeed + -1.4;
+    if(FG.x2 <= -FG.width) FG.x2 = FG.width;
+    else FG.x2 -= gameSpeed + -1.4;
+    ctx.drawImage(fence, FG.x1, FG.y, FG.width, FG.height)
+    ctx.drawImage(fence, FG.x2, FG.y, FG.width, FG.height)
+}
+
 
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.drawImage(background, 0, 0, canvas.width, canvas.height);  
+    scrollBackground();
+    scrollFence();
 
     handleObstacles();
-
+    
     bee.update();
     bee.draw();
+    
     handleParticles();
 
     // ctx.fillStyle = "red";
@@ -69,3 +105,7 @@ function handleCollisions() {
             }
     }
 }
+
+
+
+

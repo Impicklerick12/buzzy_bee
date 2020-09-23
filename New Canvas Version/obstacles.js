@@ -7,6 +7,7 @@ class Obstacle {
         this.x = canvas.width;
         this.width = 20;
         this.counted = false;
+        // this.vx = 0;
     }
     draw() {
         ctx.fillStyle = this.color;
@@ -20,6 +21,7 @@ class Obstacle {
     }
     update() {  
         this.x -= gameSpeed;
+        
         if (!this.counted && this.x < bee.x) {
             score++;
             this.counted = true;
@@ -39,3 +41,4 @@ function handleObstacles() {
         obstaclesArray.pop(obstaclesArray[0]);
     }
 }
+

@@ -8,7 +8,7 @@ let angle = 0;
 let hue = 0;
 let frame = 0;
 let score = 0;
-let gameSpeed = 5;
+let gameSpeed = 2;
 
 const background = new Image();
 background.src ='../background_hills.jpg';
@@ -20,9 +20,9 @@ const BG = {
     height: canvas.height
 }
 function scrollBackground() {
-    if(BG.x1 <= -BG.width) BG.x1 = BG.width;
+    if(BG.x1 <= -BG.width + gameSpeed) BG.x1 = BG.width;
     else BG.x1 -= gameSpeed + -1.7;
-    if(BG.x2 <= -BG.width) BG.x2 =BG.width;
+    if(BG.x2 <= -BG.width + gameSpeed) BG.x2 =BG.width;
     else BG.x2 -= gameSpeed + -1.7;
     ctx.drawImage(background, BG.x1, BG.y, BG.width, BG.height)
     ctx.drawImage(background, BG.x2, BG.y, BG.width, BG.height)
@@ -52,7 +52,7 @@ function animate() {
     scrollBackground();
     scrollFence();
 
-    handleObstacles();
+    // handleObstacles();
     
     bee.update();
     bee.draw();

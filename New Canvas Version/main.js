@@ -11,7 +11,7 @@ let score = 0;
 let gameSpeed = 2;
 
 const background = new Image();
-background.src ='../background_hills.jpg';
+background.src ='./background_hills.jpg';
 const BG = {
     x1: 0,
     x2: canvas.width,
@@ -29,7 +29,7 @@ function scrollBackground() {
 }
 
 const fence = new Image();
-fence.src ='../fence.png';
+fence.src ='./fence.png';
 const FG = {
     x1: 0,
     x2: canvas.width,
@@ -45,7 +45,6 @@ function scrollFence() {
     ctx.drawImage(fence, FG.x1, FG.y, FG.width, FG.height)
     ctx.drawImage(fence, FG.x2, FG.y, FG.width, FG.height)
 }
-
 
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -92,7 +91,7 @@ function handleCollisions() {
                 
                 // collision detected
                 const gameOver = new Image();
-                gameOver.src = "../game_over.png";
+                gameOver.src = "./game_over.png";
                 gameOver.onload = function() {
                     ctx.drawImage(gameOver, 155, 100, 300, 180);
                 }

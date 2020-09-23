@@ -48,6 +48,7 @@ function scrollFence() {
 
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
     scrollBackground();
     scrollFence();
 
@@ -57,11 +58,6 @@ function animate() {
     bee.draw();
     
     handleParticles();
-
-    // ctx.fillStyle = "red";
-    // ctx.font = "90px Georgia";
-    // ctx.strokeText(score, 450, 70);
-    // ctx.fillText(score, 450, 70);
 
     handleCollisions();
     if (handleCollisions()) return;

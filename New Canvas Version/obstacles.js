@@ -14,7 +14,7 @@ class Obstacle {
         // ctx.fillRect(this.x, 0, this.width, this.top);
         // ctx.fillRect(this.x, canvas.height - this.bottom, this.width, this.bottom);
         const vine = new Image();
-        vine.src = '../vine.png';
+        vine.src = './vine.png';
         ctx.drawImage(vine, this.x, 0, this.width, this.top);
         ctx.drawImage(vine, this.x, canvas.height - this.bottom, this.width, this.bottom);
        

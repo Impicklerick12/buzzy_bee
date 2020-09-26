@@ -52,7 +52,7 @@ function animate() {
     scrollBackground();
     scrollFence();
 
-    // handleObstacles();
+    handleObstacles();
     
     bee.update();
     bee.draw();

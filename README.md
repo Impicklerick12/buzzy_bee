@@ -1,9 +1,9 @@
-## Overview
-This was our entry into the Coder Academy Hackathon, it won 3rd place.
-Timeframe & Date: 21st-23rd Sep 2020
-
-
+## Buzzy Bee - Overview<br>
+This was our entry into the Coder Academy Hackathon, it won 3rd place.<br>
 We chose to build a flappy bird style game as it offered simple mechanics and a single input to play.
+
+**Timeframe & Date**<br> 
+21st-23rd Sep 2020
 
 **Controls**<br> 
 Spacebar to flap/fly up.

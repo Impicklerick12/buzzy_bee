@@ -9,6 +9,7 @@ class Bee {
     }
     update() {
         let curve = Math.sin(angle) * 20;
+
         if (this.y > canvas.height - (this.height * 1.5) + curve) {
             this.y = canvas.height - (this.height * 1.5) + curve;
             this.vy = 0;
@@ -26,6 +27,7 @@ class Bee {
     draw() {
         // ctx.fillStyle = 'red';
         // ctx.fillRect(this.x, this.y, this.width, this.height);
+        
         const bee = new Image();
         bee.src = './bee.png';
         ctx.drawImage(bee, this.x, this.y, 40, 40);

@@ -4,8 +4,7 @@
 }
 
 #gameBoard {
-    background-image: url(background_hills.jpg);
-    background-color: white;
+    background-color: black;
     width: 500px;
     height: 700px;
     margin: auto; 
@@ -14,8 +13,7 @@
 }
 
 #pipe {
-    background-image: url(flappybird-pipe.png);
-    /* background-color: red; */
+    background-image: url(./New\ Canvas\ Version/flappybird-pipe.png);
     width: 60px;
     height: 700px;
     position: relative;
@@ -34,15 +32,13 @@
 #hole {
     width: 60px;
     height: 150px;
-    background-image: url(background_hills.jpg);
-    background: green;
+    background-color: black;
     position: relative;
     left: 500px;
     /* Starting position of the first hole */
     top: -350px;
     border-top: 5px ridge green;
     border-bottom: 5px ridge green;
-    
     animation: pipe 2s infinite linear;
 
     /* Bug fixing speed */
@@ -50,7 +46,7 @@
 }
 
 #bee {
-    background-image: url(bee.png);
+    background-image: url(../New\ Canvas\ Version/bee.png);
     height: 40px;
     width: 40px;
     /* background-color: blue; */

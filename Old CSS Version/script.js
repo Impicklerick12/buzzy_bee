@@ -24,6 +24,7 @@ setInterval(function(){
     var holeTop = parseInt(window.getComputedStyle(hole).getPropertyValue('top'));
     var bTop = -(741 - beeTop);
 
+    // Gigantic if statement to determine if bee has colided with an obstacle
     if((beeTop > 695) || ((pipeLeft < 217) && (pipeLeft > 147) && ((bTop < holeTop) || (bTop > holeTop + 110)))){
 
         // Use these to trouble shoot the conditional statements above to find out which is failing
@@ -33,7 +34,10 @@ setInterval(function(){
         console.log(`beeTop < holeTop: ${beeTop < holeTop}`);
         console.log(`beeTop > holeTop + 110: ${beeTop > holeTop + 110}`);
         
-        alert('Game Over. Score: ' + (counter -1));
+        // Game over message
+        alert('Game Over. Score: ' + (counter));
+
+        // Reset the bee to its original position
         bee.style.top = 330 + 'px';
         counter = 0;
     }
@@ -41,13 +45,18 @@ setInterval(function(){
 
 // Jump function
 function jumping() {
+
     jump = 1;
     let jumpCount = 0;
 
+    // Assigning the set interval function to a variable so it is able to be cancelled
     var jumpInterval = setInterval(function() {
 
+        // Finding the top numerical position of the bee
         beeTop = parseInt(window.getComputedStyle(bee).getPropertyValue('top'));
         
+        // If statement to determine if the jump function is activated
+        // If bee is not at the roof, and if we have not clicked more than 15 times
         if((beeTop > 50) && (jumpCount < 15)) {
             bee.style.top = (beeTop - 5) + "px";
         }
@@ -55,11 +64,11 @@ function jumping() {
         // JumpCount keeps track of mouse clicks to prevent player going above screen
         if(jumpCount > 20) { 
             clearInterval(jumpInterval);
-            jump = 0
-            ;
+            jump = 0;
             jumpCount = 0;
         }
 
+        // Incrementing the jumpCount each time we click
         jumpCount++;
     },10)
 }
@@ -71,12 +80,4 @@ function spacebar(e) {
     }
 }
 document.addEventListener('keyup', spacebar)
-
-
-
-
-    // setInterval(function() {
-    //     draw();
-    //     move();
-    // }, 1000 / FPS)
 

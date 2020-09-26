@@ -1,6 +1,7 @@
 ## Overview
-This was our entry into the Coder Academy Hackathon.
-Date: 21st-23rd Sep 2020
+This was our entry into the Coder Academy Hackathon, it won 3rd place.
+Timeframe & Date: 21st-23rd Sep 2020
+
 
 We chose to build a flappy bird style game as it offered simple mechanics and a single input to play.
 
@@ -20,4 +21,4 @@ The images used were all sourced online, and unfortunately we're unable to give 
 - You must refresh the browser to play again after game over.
 - The vine collisions are not perfect.
 - There is no instruction of how to play. (press spacebar!)
-- Vines appear squashed and stretched
+- Vines appear squashed and stretched.

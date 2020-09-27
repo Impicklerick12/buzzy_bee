@@ -1,17 +1,24 @@
-The goal of this project is to work in a team of two for the Coder Academy Hackathon.
+## Buzzy Bee - Overview<br>
+This was our entry into the Coder Academy Hackathon, it won 3rd place.<br>
+We chose to build a flappy bird style game as it offered simple mechanics and a single input to play.
 
-We chose to build a flappy bird style game. The mechanics/functionality are the most important, but if we have time
-visual will be included.
+**Timeframe & Date**<br> 
+21st-23rd Sep 2020
 
-Game Mechanics:
-Mouse clicking will keep the bird/player character from falling due to gravity.
+**Controls**<br> 
+Spacebar to flap/fly up.
 
-Goal:
-Avoid falling to the ground and the obstacles you fly through as you move from the left to the right side of the screen.
+**Goal**<br>
+Try and fly for as long as possible whilst avoiding the ground and vine obstacles.
 
-Sounds:
-Sound can be included towards the end after main game is complete.
+**Sound**<br>
+Due to our understanding prior to the hackathon, there is currently no sound feature in the game.
 
-Visual:
-Basic colours to begin followed by pixel art/retro.
+**Visual**<br>
+The images used were all sourced online, and unfortunately we're unable to give credit to the original creators. If you believe any of these images to be works of your own, please feel free to get in contact so we may give credit where it's due.
 
+**Known issues/Bugs**<br>
+- You must refresh the browser to play again after game over.
+- The vine collisions are not perfect.
+- There is no instruction of how to play. (press spacebar!)
+- Vines appear squashed and stretched.

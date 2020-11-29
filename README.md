@@ -1,11 +1,14 @@
 ## Buzzy Bee - Overview<br>
 This was our entry into the Coder Academy Hackathon, it won 3rd place.<br>
 We chose to build a flappy bird style game as it offered simple mechanics and a single input to play.
+## Link to the game
+[Buzzy Bee](https://buzzing-bee.netlify.app/)
 
 **Timeframe & Date**<br> 
 21st-23rd Sep 2020
 
-**Controls**<br> 
+**Controls**<br>
+Click the browser refresh button to start game after game over.<br> 
 Spacebar to flap/fly up.
 
 **Goal**<br>
